@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+//import * as React from 'react';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import Box from '@mui/material/Box';
+import PersonIcon from '@mui/icons-material/Person';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Box
+    sx={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'end',
+      '& > *': {
+        m: 1,
+      },
+    }}
+  >
+    <ButtonGroup variant="text" aria-label="text button group">
+      <Button startIcon={<PersonIcon />}>My Account</Button>
+      <Button>Favorites</Button>
+      <Button>Cart</Button>
+      <Button>Sign In</Button>
+    </ButtonGroup>
+  </Box>
+);
 }
 
 export default App
