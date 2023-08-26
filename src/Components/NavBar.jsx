@@ -13,7 +13,10 @@ function NavBar() {
       alignItems: 'end',
     }}
   >
-    <ButtonGroup variant="text" aria-label="text button group">
+    <ButtonGroup 
+      variant="text" 
+      aria-label="text button group"
+      >
       <Button startIcon={<PersonIcon />}>My Account</Button>
       <Button startIcon={<FavoriteIcon />}>Favorites</Button>
       <Button startIcon={<ShoppingCartIcon />}>Cart</Button>
@@ -23,4 +26,4 @@ function NavBar() {
 );
 }
 
-export default NavBar
+export default NavBar;
