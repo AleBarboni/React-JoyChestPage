@@ -2,12 +2,13 @@ import NavBar from '../Components/NavBar';
 import AvatarLogo from '../Components/AvatarLogo';
 import { Stack, Typography } from '@mui/material';
 import CategoryCard from '../Components/CategoryCard';
-import RoutePaths from '../Constants/route-paths';
-
+// import RoutePaths from '../Constants/route-paths';
+// import { useDispatch } from "react-redux";
 
 function HomePage() {
+  // const dispatch = useDispatch();
 
-// const handleOnClick = () => 
+  // const handleOnClick = () => {RoutePaths.EARRINGS}
 
   return (
     <Stack
@@ -42,7 +43,8 @@ function HomePage() {
           < CategoryCard 
           image="/IMG_4429a.jpg"
           categoryTitle="Earrings"
-          path={RoutePaths.EARRINGS}
+          // path={RoutePaths.EARRINGS}
+          // onClick={handleOnClick}
           />
           <CategoryCard 
           image="/IMG_4455a.jpg"
@@ -59,10 +61,10 @@ function HomePage() {
         sx={{m: "2%"}}
         >
         <Typography variant="h4">Floral Models</Typography>
-        <Typography variant="h6" textAlign="center" width= "80%">There is nothing like a beautiful flower to lift one's spirits. 
+        <Typography variant="h6" textAlign="center" width= "80%">There is nothing like a beautiful flower to lift one`s spirits. 
         The charming thing about flowers is that they speak volumes without saying a word. 
         Flowers can represent a multitude of emotions and feelings: from love, passion and desire 
-        to purity or innocence, or say: I love you, I'm sorry, I'm proud of you, or say just because!
+        to purity or innocence, or say: I love you, I`m sorry, I`m proud of you, or say just because!
         </Typography>
         </Stack>
       </Stack>

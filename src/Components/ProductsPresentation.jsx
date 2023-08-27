@@ -4,13 +4,13 @@ import itemData from '../itemData';
 
 function ProductsPresentation() {
   return (
-    <Box sx={{ overflowY: 'scroll' }}>
+    <Box>
     <ImageList variant="masonry" cols={3} gap={8}>
       {itemData.map((item) => (
-        <ImageListItem key={item.img}>
+        <ImageListItem key={item.image}>
           <img
-            src={`${item.img}?w=248&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+            src={`${item.image}?w=248&fit=crop&auto=format`}
+            srcSet={`${item.image}?w=248&fit=crop&auto=format&dpr=2 2x`}
             alt={item.title}
             loading="lazy"
           />

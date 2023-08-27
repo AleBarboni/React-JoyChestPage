@@ -6,6 +6,7 @@ import FadeIn from './utils/FadeIn';
 import HomePage from './Pages/HomePage';
 // import { useDispatch, useSelector } from "react-redux";
 import EarringsPage from './Pages/EarringsPage';
+import ProductsPresentation from './Components/ProductsPresentation';
 
 
 
@@ -38,14 +39,14 @@ function App() {
 							</FadeIn>
 						}
 					/>
-					{/* <Route
-						path={RoutePaths.FORGOT_PASSWORD}
+					<Route
+						path={RoutePaths.PRESENTATION}
 						element={
 							<FadeIn>
-								<ForgotPasswordPage />
+								<ProductsPresentation />
 							</FadeIn>
 						}
-					/> */}
+					/>
 				</Routes>
 			</BrowserRouter>
 		

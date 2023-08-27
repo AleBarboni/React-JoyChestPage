@@ -1,12 +1,12 @@
 import { Stack, Card, CardContent, CardMedia, CardActionArea, Typography } from '@mui/material';
 
-function CategoryCard({image, categoryTitle, path}) {
+function CategoryCard({image, categoryTitle}) {
 
 // const handleOnClich = () => 
 
   return (
       <Card 
-      onClick={path}
+      // onClick={path}
       sx={{ width: "30%" }}
       >
       <CardActionArea>
