@@ -3,7 +3,6 @@ import { Avatar, Stack } from "@mui/material"
 function AvatarLogo () {
     return (
         <Stack
-        direction="row" 
         justifyContent="space-around"
         alignItems="center"
         >
@@ -11,7 +10,7 @@ function AvatarLogo () {
             variant="square"
             alt="Logo"
             src="/Joychest_2.png"
-            sx={{ width: 500, height: 100 }}
+            sx={{ width: 400, height: 100 }}
         />
         </Stack>
         

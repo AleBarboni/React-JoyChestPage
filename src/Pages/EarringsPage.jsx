@@ -4,7 +4,8 @@ import ProductCard from './../Components/ProductCard';
 function EarringsPage() {
     return (
         // <Stack sx={{ width: "100%", height: "100vh" }}> 
-          <Stack sx={{ height: "100%" }} direction={"row"}>
+          <Stack sx={{ height: "100%" }} 
+          direction="row">
             <ProductCard 
               image="/IMG_3996.jpg"
               title="Flower earrings"

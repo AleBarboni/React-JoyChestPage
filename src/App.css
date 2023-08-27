@@ -1,3 +1,17 @@
 html {
   background-color:#f5f5dc;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .button-label {
+       display: none;
+  }
+}
+
+/* @media screen and (max-width: 700px) {
+  
+} */
